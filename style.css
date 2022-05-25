@@ -1,12 +1,10 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'POPPINS', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
-.wrapper {
-  width: 396px;
-}
+
 
 /* the nav bar */
 nav {
@@ -42,7 +40,7 @@ nav {
 .headline {
   font-size: 40px;
   line-height: 54px;
-  font-weight: 700;
+  font-weight: 800;
   padding: 10px 0;
   margin-top: 10px;
   padding-top: 100px;
