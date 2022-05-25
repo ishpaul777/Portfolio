@@ -3,9 +3,11 @@
   padding: 0;
   font-family: 'POPPINS', sans-serif;
 }
-.wrapper{
-    width: 396px;
+
+.wrapper {
+  width: 396px;
 }
+
 /* the nav bar */
 nav {
   display: flex;
@@ -25,43 +27,50 @@ nav {
 .toggle-menu img {
   width: 28px;
 }
-/*INTRODUCTION SECTION*/
-.intro-section{
-    background: url(/assets/images/header-bg-mobile.png);
-    background-position: center;
-    background-repeat: no-repeat ;
-    height: 80vh;
-    padding-left: 40px;
-    padding-top: ;
-    text-align: left;
+
+/* INTRODUCTION SECTION */
+.intro-section {
+  background: url(/assets/images/header-bg-mobile.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  padding-left: 40px;
+  padding-top: ;
+  text-align: left;
 }
-/*HEADLINE*/
-.headline{
-    font-size: 40px;
-    line-height: 52px;
-    font-weight: bold;
-    padding: 10px 0;
-    margin-top: 10px;
-    padding-top: 100px;
+
+/* HEADLINE */
+.headline {
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: bold;
+  padding: 10px 0;
+  margin-top: 10px;
+  padding-top: 100px;
 }
-/*DESCRIPTION*/
-.description{
-    margin-top: 10px;
-    width: 300px;
-    font-size: 16px;
-    margin-bottom: 10px;
+
+/* DESCRIPTION */
+.description {
+  margin-top: 10px;
+  width: 300px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 400;
 }
-/*SOCIAL MEDIA*/
-.social-handles p{
-    color: #7F8CFF;
-    font-size: 20px;
-    margin-bottom: 10px;
+
+/* SOCIAL MEDIA */
+.social-handles p {
+  color: #7f8cff;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
-.social-icons{
-    list-style: none;
-    display: flex;
+
+.social-icons {
+  list-style: none;
+  display: flex;
 }
-.social-icons img{
-    width: 24px;
-    margin-right: 20px;
+
+.social-icons img {
+  width: 24px;
+  margin-right: 20px;
 }
