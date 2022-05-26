@@ -13,7 +13,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://ishpaul777.github.io/Portfolio/)
 
 
 ## Getting Started
@@ -27,7 +27,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Author1**
+👤 **Ishpaul Singh**
 
 - GitHub: [@githubhandle](https://github.com/ishpaul777)
 
