@@ -4,6 +4,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
+body {
+  background-color: #fcf8f8;
+}
+
 /* the nav bar */
 nav {
   display: flex;
@@ -20,6 +24,10 @@ nav {
   text-decoration: none;
 }
 
+.logo:hover {
+  transform: scale(1.1) rotate(360deg);
+}
+
 /* toggle-menu */
 .toggle-menu img {
   width: 28px;
@@ -27,12 +35,14 @@ nav {
 
 /* INTRODUCTION SECTION */
 .intro-section {
-  background: url(./assets/images/header-bg-mobile.png);
+  background: #fff url(./assets/images/header-bg-mobile.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 80vh;
   padding-left: 40px;
   text-align: left;
+  margin-bottom: 40px;
+  border-bottom-left-radius: 80px;
 }
 
 /* HEADLINE */
@@ -43,7 +53,7 @@ nav {
   padding: 10px 0;
   margin-top: 10px;
   margin-right: 10px;
-  padding-top: 100px;
+  padding-top: 150px;
   color: #172b4d;
 }
 
@@ -72,4 +82,98 @@ nav {
 .social-icons img {
   width: 24px;
   margin-right: 20px;
+}
+
+/* project-section */
+
+.project-section {
+  display: grid;
+  grid-gap: 100px;
+  margin: 100px 0;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  margin: 0 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  border: 1px solid #b2b3b6;
+  padding: 30px;
+}
+
+.project img {
+  width: 295px;
+  height: 220px;
+  margin-bottom: 12px;
+}
+
+.project-name {
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.developer-info {
+  display: flex;
+  margin-bottom: 15px;
+  font-size: 15px;
+  padding-left: 5px;
+}
+
+.developer-name {
+  color: #172b4d;
+  margin-right: 10px;
+  font-weight: 700;
+}
+
+.developer-info ul {
+  display: flex;
+}
+
+.developer-info li {
+  font-weight: 500;
+  margin-right: 10px;
+  color: #7a869a;
+  list-style: none;
+}
+
+.project-description {
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+  margin-bottom: 15px;
+  padding-left: 5px;
+}
+
+.languages-used {
+  list-style: none;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.language {
+  margin-right: 10px;
+  padding: 4px 12px;
+  background: #ebebff;
+  color: #6070ff;
+  border-radius: 8px;
+}
+
+.project-link {
+  border: 2px solid #396df2;
+  color: #396df2;
+  border-radius: 8px;
+  background: transparent;
+  padding: 13px 8px;
+  width: 125px;
+  font-size: 17px;
+}
+
+.project-link:hover {
+  background-color: #6070ff46;
+  color: #396df2;
 }
