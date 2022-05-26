@@ -3,7 +3,7 @@
 # Portfolio
 ## Screenshots
 ### Mobile version
-![mobile vesion](/assets/images/Screenshot.png)
+Will be added once project is completed
 
 
 ## Built With
