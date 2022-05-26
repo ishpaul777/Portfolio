@@ -177,6 +177,7 @@ button:hover {
   color: #fff;
 }
 
+<<<<<<< HEAD
 button:focus {
   background-color: #2230d2;
   color: #fff;
@@ -187,6 +188,8 @@ button:disabled {
   color: #5e6c84;
 }
 
+=======
+>>>>>>> afb79017ce94ff696ae359726e28981ed3fadb2d
 /* About me */
 
 .about-me {
