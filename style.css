@@ -13,10 +13,11 @@ nav {
 }
 
 /* logo */
-.logo h2 {
+.logo a {
   color: #6070ff;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 22px;
+  text-decoration: none;
 }
 
 /* toggle-menu */
@@ -50,7 +51,7 @@ nav {
 .description {
   margin-top: 10px;
   width: 300px;
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 10px;
   font-weight: 400;
   color: #344563;
