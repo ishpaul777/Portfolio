@@ -43,6 +43,7 @@ nav {
   margin-top: 10px;
   margin-right: 10px;
   padding-top: 100px;
+  color: #172B4D;
 }
 
 /* DESCRIPTION */
@@ -52,6 +53,8 @@ nav {
   font-size: 18px;
   margin-bottom: 10px;
   font-weight: 400;
+  color: #344563;
+
 }
 
 /* SOCIAL MEDIA */
