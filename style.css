@@ -26,8 +26,8 @@ nav {
 
 /* INTRODUCTION SECTION */
 .intro-section {
-  background: url(/assets/images/header-bg-mobile.png);
-  background-position: center;
+  background: url(./assets/images/header-bg-mobile.png);
+  background-size: cover;
   background-repeat: no-repeat;
   height: 80vh;
   padding-left: 40px;
