@@ -1,1 +1,26 @@
-<?xml version="1.0"?><svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px">    <path d="M 5 3 C 3.895 3 3 3.895 3 5 L 3 19 C 3 20.105 3.895 21 5 21 L 19 21 C 20.105 21 21 20.105 21 19 L 21 5 C 21 3.895 20.105 3 19 3 L 5 3 z M 5 5 L 19 5 L 19 19 L 5 19 L 5 5 z M 7.7792969 6.3164062 C 6.9222969 6.3164062 6.4082031 6.8315781 6.4082031 7.5175781 C 6.4082031 8.2035781 6.9223594 8.7167969 7.6933594 8.7167969 C 8.5503594 8.7167969 9.0644531 8.2035781 9.0644531 7.5175781 C 9.0644531 6.8315781 8.5502969 6.3164062 7.7792969 6.3164062 z M 6.4765625 10 L 6.4765625 17 L 9 17 L 9 10 L 6.4765625 10 z M 11.082031 10 L 11.082031 17 L 13.605469 17 L 13.605469 13.173828 C 13.605469 12.034828 14.418109 11.871094 14.662109 11.871094 C 14.906109 11.871094 15.558594 12.115828 15.558594 13.173828 L 15.558594 17 L 18 17 L 18 13.173828 C 18 10.976828 17.023734 10 15.802734 10 C 14.581734 10 13.930469 10.406562 13.605469 10.976562 L 13.605469 10 L 11.082031 10 z"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48" width="48px" height="48px">
+<defs>
+<filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+  <feColorMatrix type="matrix" in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+</filter>
+<mask id="mask0">
+  <g filter="url(#alpha)">
+<rect x="0" y="0" width="48" height="48" style="fill:rgb(0%,0%,0%);fill-opacity:0.05;stroke:none;"/>
+  </g>
+</mask>
+<image id="image66864" width="48" height="48" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAAA30lEQVRoge3UTQqCQBjG8b/RJs9gp2jbhTpMFEY3CIJoW5dpK+kRWkS2KCEsPxtnFJ4fvBtH33kfHAURERERacoHQiAGEmANTJxO1FAIpLlaOp2ooYTvALGLQUYGez0M9qqtbYDjj2uHfwaxzQc2vI7SFVgxsI84f/6zKlubATvgAtyACNgDc5uDZ9oEKKstMLY3vvkAWQhrugiQ0uI4mfyNmrCwtVFXbyDqc4ATELzrXHDPvc8Bgo/npxU9avNajV+8kVexVrdHbX37iBtTANcUwDUFcG3wAURERERkwJ6EZ5/ZRtQRTwAAAABJRU5ErkJggg=="/>
+<mask id="mask1">
+  <g filter="url(#alpha)">
+<rect x="0" y="0" width="48" height="48" style="fill:rgb(0%,0%,0%);fill-opacity:0.07;stroke:none;"/>
+  </g>
+</mask>
+<image id="image66867" width="48" height="48" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAABNklEQVRoge2VP0pEMRCHvyf2gr7GUgRbwVK38gzqFUTwENtai40n0MUzWO22HkHBP4igsl5g12IiT55P1+TFZGV/H6TITGaYX4ZJQAghhBBidilaxC4BOy7HBfAcpaJElMA9MHbrDhP0bzigKv5j7ecoZC5irnHEXH9OCTxQ3f4tsJijkDZDXGJDPMKG+DVKRZ6ECugAWzXbAOhP8K0C21i3XoBL4DqwhlZ0+TrE3R98x0AP69Zn+8jZg1+w+dBATw6/sRfALrAObGJd8SLmK9SGNeAkJHBaBADsASu+QSkFDIFTt94a/AU24F6kmoEhsAHcuP0RcAUs1M4t+yZO1YEzquLBns7zhnPeF5pKwFOD7TFG4mka4iAkIDcSkBsJyE3oT9zHftO6bZLvtzmEEEIIIcQs8A6ScD9uFboPowAAAABJRU5ErkJggg=="/>
+</defs>
+<g id="surface66860">
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(40.000001%,40.000001%,40.000001%);fill-opacity:1;" d="M 24 4 C 12.953125 4 4 12.953125 4 24 C 4 35.046875 12.953125 44 24 44 C 35.046875 44 44 35.046875 44 24 C 44 12.953125 35.046875 4 24 4 Z M 24 4 "/>
+<use xlink:href="#image66864" mask="url(#mask0)"/>
+<use xlink:href="#image66867" mask="url(#mask1)"/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 14 19 L 18 19 L 18 34 L 14 34 Z M 15.988281 17 L 15.964844 17 C 14.773438 17 14 16.109375 14 15 C 14 13.863281 14.796875 13 16.011719 13 C 17.226562 13 17.976562 13.863281 18 15 C 18 16.109375 17.226562 17 15.988281 17 Z M 35 24.5 C 35 21.460938 32.539062 19 29.5 19 C 27.636719 19 25.996094 19.929688 25 21.34375 L 25 19 L 21 19 L 21 34 L 25 34 L 25 26 C 25 24.34375 26.34375 23 28 23 C 29.65625 23 31 24.34375 31 26 L 31 34 L 35 34 C 35 34 35 24.921875 35 24.5 Z M 35 24.5 "/>
+</g>
+</svg>
