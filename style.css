@@ -60,7 +60,7 @@ nav {
 /* DESCRIPTION */
 .description {
   margin-top: 10px;
-  width: 300px;
+  width: 500px;
   font-size: 16px;
   margin-bottom: 10px;
   font-weight: 400;
@@ -177,19 +177,6 @@ button:hover {
   color: #fff;
 }
 
-<<<<<<< HEAD
-button:focus {
-  background-color: #2230d2;
-  color: #fff;
-}
-
-button:disabled {
-  border: 2px solid #5e6c84;
-  color: #5e6c84;
-}
-
-=======
->>>>>>> afb79017ce94ff696ae359726e28981ed3fadb2d
 /* About me */
 
 .about-me {
@@ -198,6 +185,7 @@ button:disabled {
 
 .about-me .headline {
   padding-top: 60px;
+  margin-right: 40px;
 }
 
 .resume-btn {
@@ -221,22 +209,31 @@ button:disabled {
   color: #000;
 }
 
+.lang-skill li {
+  list-style: none;
+}
+
 .skill-type img {
   width: 30px;
 }
 
-.lang-skill {
+.lang-type {
   display: flex;
   align-items: center;
-  font-size: 15px;
-  color: #253858;
-  padding: 10px 13px;
-  background-color: #f7f7f9;
-  margin-bottom: 10px;
+  margin: 20px;
+  background-color: rgb(230, 238, 244);
+  padding: 10px;
   border-radius: 8px;
+  font-size: 15px;
+  color: #000;
+  text-decoration: none;
 }
 
-.lang-skill img {
+.lang-type:hover {
+  background-color: #cbd2e0;
+}
+
+.lang-type img {
   margin-right: 20px;
 }
 
