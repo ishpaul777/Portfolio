@@ -13,7 +13,7 @@ Will be added once project is completed
 
 ## Live Demo (if available)
 
-[See live here](https://ishpaul777.github.io/Portfolio/))
+[See live here](https://ishpaul777.github.io/Portfolio/)
 
 
 ## Getting Started
