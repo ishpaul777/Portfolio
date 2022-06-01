@@ -28,6 +28,11 @@ nav {
   transform: scale(1.1) rotate(360deg);
 }
 
+/* Menu */
+.menu {
+  display: none;
+}
+
 /* toggle-menu */
 .toggle-menu img {
   width: 28px;
@@ -38,7 +43,7 @@ nav {
   background: #fff url(./assets/images/header-bg-mobile.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 80vh;
+  height: 100vh;
   padding-left: 40px;
   text-align: left;
   margin-bottom: 40px;
@@ -61,7 +66,7 @@ nav {
 .description {
   margin-top: 10px;
   font-size: 16px;
-  width: 300px;
+  max-width: 80%;
   margin-bottom: 10px;
   font-weight: 400;
   color: #344563;
@@ -86,11 +91,20 @@ nav {
 
 /* project-section */
 
-.project-section {
+#project-section {
   display: grid;
   grid-gap: 100px;
   margin: 100px 0;
   justify-content: center;
+}
+
+#works {
+  text-align: center;
+  color: #172b4d;
+  font-size: 32px;
+  margin: auto auto;/* text-align: center can be used here but this was troubling the bottom border */
+  padding-bottom: 10px;
+  border-bottom: 1px solid #344563;
 }
 
 .project {
@@ -184,6 +198,11 @@ button:hover {
 
 .about-me {
   margin: 20px;
+  margin-bottom: 100px;
+}
+
+.about-content {
+  padding-left: 20px;
 }
 
 .about-me .headline {
@@ -244,6 +263,7 @@ button:hover {
   width: 30px;
 }
 
+/* CONTACT FORM */
 footer {
   padding: 100px 20px;
   padding-bottom: 50px;
@@ -305,4 +325,177 @@ input {
   width: fit-content;
   padding: 10px 13px;
   align-self: baseline;
+}
+
+
+/* Desktop-version */
+@media (min-width: 768px) {
+  /* nav-menu */
+  nav {
+    padding: 12px 150px;
+  }
+
+  .toggle-menu {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    list-style: none;
+  }
+
+  .menu li {
+    margin-right: 30px;
+    padding: 5px 5px;
+  }
+
+  .menu li a {
+    text-decoration: none;
+    color: #344563;
+  }
+
+  .menu li:hover {
+    background-color: rgb(226, 226, 226);
+    border-radius: 5px;
+  }
+
+  /* INTRO SECTION */
+  .intro-section {
+    background: #fff url(./assets/images/header-bg-pc.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 250px;
+    border-bottom-left-radius: 160px;
+  }
+
+  .intro-content {
+    min-width: 70%;
+    padding-top: 50px;
+  }
+
+  .headline {
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 800;
+    padding-top: 0;
+  }
+
+  .description {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  /* Project Section */
+  .project {
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 24px;
+  }
+
+  .project section {
+    margin: 20px;
+  }
+
+  .project img {
+    width: 50%;
+    height: auto;
+  }
+
+  .project-name {
+    padding-top: 20px;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .developer-info {
+    font-size: 18px;
+    line-height: 24px;
+    padding-left: 5px;
+  }
+
+  .project-description {
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .project:nth-of-type(2) {
+    flex-direction: row-reverse;
+  }
+
+  .project:nth-of-type(4) {
+    flex-direction: row-reverse;
+  }
+
+  /* About-me section */
+  .about-me {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px;
+    margin: 100px 0;
+    border-top-right-radius: 150px;
+  }
+
+  .about-content {
+    width: 30%;
+    margin-right: 30px;
+    font-size: 16px;
+  }
+
+  .about-content .description {
+    max-width: unset;
+  }
+
+  .skills-info {
+    width: 50%;
+    margin-left: 30px;
+  }
+
+  .lang-skill {
+    display: flex;
+    margin-left: 20px;
+  }
+
+  .lang-skill li a {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 20px;
+    margin-left: 0;
+    padding-bottom: 20px;
+  }
+
+  .lang-skill li a img {
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  /* contact us */
+  footer {
+    border-top-left-radius: 160px;
+    background: #6070ff url(./assets/images/footer-bg-pc.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form-container {
+    max-width: 35%;
+  }
+
+  #contact-btn {
+    align-self: unset;
+  }
 }
