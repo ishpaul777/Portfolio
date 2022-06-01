@@ -243,3 +243,37 @@ button:hover {
 .instagram img {
   width: 30px;
 }
+
+footer {
+  padding: 0 20px;
+  background: red;
+}
+
+.contact-me {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  margin-bottom: 12px;
+}
+
+.contact-details {
+  font-size: 20px;
+  color: #EBEBFF;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+input {
+  font-size: 17px;
+  color: #172B4D;
+  padding: 15px 16px;
+  width: -webkit-fill-available;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #CFD8DC;
+}
+
+::placeholder {
+  color: #B3BAC5;
+}
