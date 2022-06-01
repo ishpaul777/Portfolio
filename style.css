@@ -245,8 +245,11 @@ button:hover {
 }
 
 footer {
-  padding: 0 20px;
-  background: red;
+  padding: 100px 10px;
+  background: #6070ff url(./assets/images/footer-bg-mobile.png);
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 80px;
 }
 
 .contact-me {
@@ -259,21 +262,32 @@ footer {
 
 .contact-details {
   font-size: 20px;
-  color: #EBEBFF;
+  color: #ebebff;
   text-align: center;
   margin-bottom: 60px;
 }
 
 input {
   font-size: 17px;
-  color: #172B4D;
+  color: #172b4d;
   padding: 15px 16px;
   width: -webkit-fill-available;
   margin-bottom: 20px;
   border-radius: 8px;
-  border: 1px solid #CFD8DC;
+  border: 1px solid #cfd8dc;
 }
 
 ::placeholder {
-  color: #B3BAC5;
+  color: #b3bac5;
 }
+
+#message {
+  border: 1px solid #cfd8dc;
+  width: -webkit-fill-available;
+  font-size: 17px;
+  color: #172b4d;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 20px;
+}
+
