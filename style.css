@@ -25,8 +25,8 @@ nav {
   text-decoration: none;
 }
 
-.logo:hover {
-  transform: scale(1.1) rotate(360deg);
+.logo {
+  transition: 5s;
 }
 
 /* Menu */
@@ -88,6 +88,11 @@ nav {
 .social-icons img {
   width: 24px;
   margin-right: 20px;
+  transition: 1s;
+}
+
+.instagram img {
+  width: 30px;
 }
 
 /* project-section */
@@ -116,7 +121,7 @@ nav {
   border: 1px solid #b2b3b6;
   padding: 20px 10px;
   margin: 20px;
-  box-shadow: 3px 2px 5px #b3bac5;
+  transition: 1s;
 }
 
 .project img {
@@ -125,6 +130,7 @@ nav {
   margin-bottom: 12px;
   padding: 15px;
   align-content: center;
+  transition: 2s;
 }
 
 .project-name {
@@ -189,11 +195,7 @@ button {
   padding: 13px 8px;
   width: 125px;
   font-size: 17px;
-}
-
-button:hover {
-  background-color: #6070ff;
-  color: #fff;
+  transition: background-color 0.8s;
 }
 
 /* About me */
@@ -260,11 +262,6 @@ button:hover {
   margin-right: 20px;
 }
 
-.linkedin img,
-.instagram img {
-  width: 30px;
-}
-
 /* CONTACT FORM */
 footer {
   padding: 100px 20px;
@@ -319,7 +316,7 @@ input {
   margin-bottom: 20px;
 }
 
-#contact-btn {
+.contact-btn {
   background: #fff;
   margin-bottom: 20px;
   font-weight: 500;
@@ -327,6 +324,7 @@ input {
   width: fit-content;
   padding: 10px 13px;
   align-self: baseline;
+  transition: 1s;
 }
 
 /* Desktop-version */
@@ -496,7 +494,50 @@ input {
     max-width: 35%;
   }
 
-  #contact-btn {
+  .contact-btn {
     align-self: unset;
   }
+}
+
+/* transitions */
+
+.logo:hover {
+  transform: rotate(360deg);
+}
+
+.project:hover,
+.project:active {
+  border: 2px solid #b2b3b6;
+  box-shadow: 3px 3px 10px #b3bac5;
+}
+
+button:hover {
+  background-color: #6070ff;
+  color: #fff;
+  box-shadow: 3px 1px 16px 1px rgba(96, 112, 255, 1);
+}
+
+button:active {
+  background-color: #2230d2;
+  color: #fff;
+  box-shadow: 3px 1px 16px 1px rgba(96, 112, 255, 1);
+}
+
+.contact-btn:hover,
+.contact-btn:active {
+  color: #396df2;
+  background-color: white;
+  box-shadow: -1px -1px 22px -5px rgba(255, 255, 255, 0.75);
+}
+
+.social-icons img:active {
+  width: +5px;
+}
+
+.social-icons img:hover {
+  width: 30px;
+}
+
+.instagram img:hover {
+  width: 35px;
 }
