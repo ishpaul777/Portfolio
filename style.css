@@ -200,7 +200,7 @@ button {
 
 /* About me */
 
-.about-me {
+#about-me {
   margin: 20px;
   margin-bottom: 100px;
 }
@@ -209,7 +209,7 @@ button {
   padding-left: 20px;
 }
 
-.about-me .headline {
+#about-me .headline {
   padding-top: 60px;
 }
 
@@ -272,7 +272,7 @@ footer {
   border-top-left-radius: 80px;
 }
 
-.form-container {
+#form-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -431,7 +431,7 @@ input {
   }
 
   /* About-me section */
-  .about-me {
+  #about-me {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -446,7 +446,7 @@ input {
     font-size: 16px;
   }
 
-  .about-content .description {
+  #about-content .description {
     max-width: unset;
   }
 
@@ -490,7 +490,7 @@ input {
     justify-content: center;
   }
 
-  .form-container {
+  #form-container {
     max-width: 35%;
   }
 
