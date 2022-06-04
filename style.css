@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
+  
 }
 
 body {
@@ -38,7 +39,38 @@ nav {
 .toggle-menu img {
   width: 28px;
 }
+.mobile-menu{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsla(234, 85%, 62%, 0.856);
+  backdrop-filter: blur(5px);
+}
 
+#close-btn{
+  float: right;
+  width: 32px;
+  padding: 30px;
+  padding-right: 40px;
+}
+
+.menu-items {
+  padding: 20px;
+  padding-top:80px;
+}
+.menu-items li {
+  padding: 10px;
+  list-style: none;
+}
+
+.menu-items li a{
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+}
 /* INTRODUCTION SECTION */
 .intro-section {
   background: #fff url(./assets/images/header-bg-mobile.png);
@@ -276,6 +308,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 80vh;
 }
 
 .contact-me {
@@ -335,7 +368,7 @@ input {
   }
 
   .toggle-menu {
-    display: none;
+    display: none !important;
   }
 
   .menu {
