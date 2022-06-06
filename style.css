@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
-  
 }
 
 body {
@@ -39,7 +38,8 @@ nav {
 .toggle-menu img {
   width: 28px;
 }
-.mobile-menu{
+
+.mobile-menu {
   display: none;
   position: fixed;
   top: 0;
@@ -50,7 +50,7 @@ nav {
   backdrop-filter: blur(5px);
 }
 
-#close-btn{
+#close-btn {
   float: right;
   width: 32px;
   padding: 30px;
@@ -59,18 +59,20 @@ nav {
 
 .menu-items {
   padding: 20px;
-  padding-top:80px;
+  padding-top: 80px;
 }
+
 .menu-items li {
   padding: 10px;
   list-style: none;
 }
 
-.menu-items li a{
+.menu-items li a {
   font-size: 32px;
   color: white;
   text-decoration: none;
 }
+
 /* INTRODUCTION SECTION */
 .intro-section {
   background: #fff url(./assets/images/header-bg-mobile.png);
