@@ -9,11 +9,19 @@ body {
 }
 
 /* the nav bar */
+
 nav {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 25%;
+
+  /* align-items: center; */
   background-color: white;
-  padding: 12px 30px;
+  padding: 12px 0;
   box-shadow: 3px 1px 5px #b3bac5;
 }
 
@@ -235,7 +243,7 @@ button {
 
 /* About me */
 
-.about-me {
+#about-me {
   margin: 20px;
   margin-bottom: 100px;
 }
@@ -244,7 +252,7 @@ button {
   padding-left: 20px;
 }
 
-.about-me .headline {
+#about-me .headline {
   padding-top: 60px;
 }
 
@@ -307,7 +315,7 @@ footer {
   border-top-left-radius: 80px;
 }
 
-.form-container {
+#form-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -367,7 +375,7 @@ input {
 @media (min-width: 768px) {
   /* nav-menu */
   nav {
-    padding: 12px 150px;
+    gap: 50%;
   }
 
   .toggle-menu {
@@ -382,6 +390,11 @@ input {
   .menu li {
     margin-right: 30px;
     padding: 5px 5px;
+  }
+
+  .active {
+    border-bottom: 2px solid black;
+    transition: 0.3s ease-in border;
   }
 
   .menu li a {
@@ -467,7 +480,7 @@ input {
   }
 
   /* About-me section */
-  .about-me {
+  #about-me {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -526,7 +539,7 @@ input {
     justify-content: center;
   }
 
-  .form-container {
+  #form-container {
     max-width: 35%;
   }
 
