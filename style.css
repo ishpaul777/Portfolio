@@ -55,6 +55,7 @@ nav {
   width: 32px;
   padding: 30px;
   padding-right: 40px;
+  transition: 5s;
 }
 
 .menu-items {
@@ -537,6 +538,10 @@ input {
 /* transitions */
 
 .logo:hover {
+  transform: rotate(360deg);
+}
+
+#close-btn:active {
   transform: rotate(360deg);
 }
 
