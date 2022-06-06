@@ -18,11 +18,9 @@ nav {
   display: flex;
   justify-content: center;
   gap: 25%;
-
-  /* align-items: center; */
   background-color: white;
   padding: 12px 0;
-  box-shadow: 3px 1px 5px #b3bac5;
+  border-bottom: 0.5px solid #b2b3b6;
 }
 
 /* logo */
