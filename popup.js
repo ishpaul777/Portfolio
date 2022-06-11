@@ -119,13 +119,13 @@ function openPopup(index){//index for getting the project number
     //remove active from class 
     container.classList.remove('active');
     overlay.classList.remove('active');
-    document.body.style.overflow = 'auto'
+    document.body.style.overflow = 'auto'//for turning the background scrolling effect off
   });
   //remove class active if user click outside the popup-window
   overlay.addEventListener('click', () => {
     container.classList.remove('active');
     overlay.classList.remove('active');
-    document.body.style.overflow = 'auto'
+    document.body.style.overflow = 'auto'//for turning the background scrolling effect off
   });
 }
 

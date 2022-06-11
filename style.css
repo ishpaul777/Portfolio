@@ -200,7 +200,7 @@ button {
   padding: 13px 8px;
   width: 125px;
   font-size: 17px;
-  transition: background-color 0.8s;
+  transition: 0.8s;
 }
 
 /* Pop up window */
@@ -530,7 +530,7 @@ input {
   /* Pop up window */
   .pop-up-window {
     width: 80vw;
-    height: 100vh;
+    height: 90vh;
     overflow: auto;
   }
 
@@ -655,13 +655,12 @@ input {
 button:hover {
   background-color: #6070ff;
   color: #fff;
-  box-shadow: 3px 1px 16px 1px rgba(96, 112, 255, 1);
+  box-shadow: 3px 1px 16px 1px;
 }
 
 button:active {
   background-color: #2230d2;
   color: #fff;
-  box-shadow: 3px 1px 16px 1px rgba(96, 112, 255, 1);
 }
 
 .contact-btn:hover,
