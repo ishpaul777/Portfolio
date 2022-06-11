@@ -4,22 +4,24 @@ const toggleMenu = document.querySelector('.toggle-menu');
 const closeBtn = document.querySelector('#close-btn');
 const menuItems = document.querySelectorAll(".menu-item")
 //for-top-nav
-function display() {
+function openNav() {
     document.querySelector('.mobile-menu').style.display = "block";
     toggleMenu.style.display = "none";
+    document.body.style.overflow = 'hidden'
 } 
 
-toggleMenu.addEventListener('click', display)
+toggleMenu.addEventListener('click', openNav)
 
-function display2(){
+function closeNav(){
     document.querySelector('.mobile-menu').style.display = "none";
     toggleMenu.style.display ="unset";
+    document.body.style.overflow = 'auto'
 } 
 
-closeBtn.addEventListener('click', display2)
+closeBtn.addEventListener('click', closeNav)
 
 menuItems.forEach((item) => {
-    item.addEventListener('click', display2)
+    item.addEventListener('click', closeNav)
 });
 
 
