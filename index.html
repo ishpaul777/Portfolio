@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <title>Ishpaul's-Portfolio</title>
   </head>
   <body>
@@ -54,9 +55,14 @@
  
   <section id="project-section"> 
       <h3 id="works">Recent Works</h3>
+        <div class="" id="overlay"></div>
+          <div class="pop-up-window">
+            
+          </div>
+
       <div class="project">
           <img src="./assets/images/project-1.png" alt="Screenshot-of-*project-name*">
-          <section>
+          <section class="project-body">
               <h3 class="project-name">
                   Tonic
               </h3>
@@ -77,7 +83,7 @@
                   <li class="language">css</li>
                   <li class="language">javascript</li>
               </ul>
-              <button  type="button" class="project-link" >
+              <button  type="button" class="project1-link" >
                   See Project
               </button>
           </section>
@@ -85,7 +91,7 @@
 
       <div class="project">
           <img src="./assets/images/project-2.png" alt="Screenshot-of-*project-name*">
-          <section>
+          <section class="project-body">
               <h3 class="project-name">
                   Tonic
               </h3>
@@ -106,7 +112,7 @@
                   <li class="language">css</li>
                   <li class="language">javascript</li>
               </ul>
-              <button  type="button" class="project-link" >
+              <button  type="button" class="project2-link" >
                   See Project
               </button>
           </section>
@@ -114,9 +120,9 @@
 
       <div class="project">
           <img src="./assets/images/project-3.png" alt="Screenshot-of-*project-name*">
-          <section>
+          <section class="project-body">
               <h3 class="project-name">
-                  Tonic
+                  Multi-post Sory
               </h3>
               <div class="developer-info">
                   <h4 class="developer-name">
@@ -135,7 +141,7 @@
                   <li class="language">css</li>
                   <li class="language">javascript</li>
               </ul>
-              <button  type="button" class="project-link" >
+              <button  type="button" class="project3-link" >
                   See Project
               </button>
           </section>
@@ -143,7 +149,7 @@
       
       <div class="project">
           <img src="./assets/images/project-4.png" alt="Screenshot-of-*project-name*">
-          <section>
+          <section class="project-body">
               <h3 class="project-name">
                   Tonic
               </h3>
@@ -164,7 +170,7 @@
                   <li class="language">css</li>
                   <li class="language">javascript</li>
               </ul>
-              <button  type="button" class="project-link" >
+              <button  type="button" class="project4-link" >
                   See Project
               </button>
           </section>
@@ -247,5 +253,6 @@
         </div>
       </form>
     </footer>
+    <script src="./popup.js"></script>
   </body>
 </html>
