@@ -111,6 +111,7 @@ function openPopup(index){//index for getting the project number
 //then add class of active to them
   container.classList.add('active');
   overlay.classList.add('active');
+  document.body.style.overflow = 'hidden'
 
 //close-popup function
   const popupCloseBtn = document.querySelector('.popup-close-btn');//get the close btn
@@ -118,11 +119,13 @@ function openPopup(index){//index for getting the project number
     //remove active from class 
     container.classList.remove('active');
     overlay.classList.remove('active');
+    document.body.style.overflow = 'auto'
   });
   //remove class active if user click outside the popup-window
   overlay.addEventListener('click', () => {
     container.classList.remove('active');
     overlay.classList.remove('active');
+    document.body.style.overflow = 'auto'
   });
 }
 

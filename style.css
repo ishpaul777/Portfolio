@@ -530,6 +530,7 @@ input {
   /* Pop up window */
   .pop-up-window {
     width: 80vw;
+    height: 100vh;
     overflow: auto;
   }
 
