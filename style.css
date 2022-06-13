@@ -42,13 +42,13 @@ nav {
 }
 
 /* toggle-menu */
-.toggle-menu{
+.toggle-menu {
   cursor: pointer;
-  transition: .25s ease-in;
+  transition: 0.25s ease-in;
   transform: scale(1);
 }
 
-.toggle-menu.invisible{
+.toggle-menu.invisible {
   transform: scale(0);
 }
 
@@ -67,10 +67,10 @@ nav {
   transform: scale(0);
   background-color: hsla(234, 85%, 62%, 0.856);
   backdrop-filter: blur(3px);
-  transition: .5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
-.mobile-menu.active{
+.mobile-menu.active {
   transform: scale(1);
 }
 
