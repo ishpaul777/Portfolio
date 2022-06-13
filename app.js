@@ -5,17 +5,17 @@ const closeBtn = document.querySelector('#close-btn');
 const menuItems = document.querySelectorAll(".menu-item")
 //for-top-nav
 function openNav() {
-    document.querySelector('.mobile-menu').style.display = "block";
-    toggleMenu.style.display = "none";
-    document.body.style.overflow = 'hidden'
+    document.querySelector('.mobile-menu').classList.add('active');
+    toggleMenu.classList.add('invisible');
+    document.body.style.overflow = 'hidden';
 } 
 
 toggleMenu.addEventListener('click', openNav)
 
 function closeNav(){
-    document.querySelector('.mobile-menu').style.display = "none";
-    toggleMenu.style.display ="unset";
-    document.body.style.overflow = 'auto'
+    document.querySelector('.mobile-menu').classList.remove('active');
+    toggleMenu.classList.remove('invisible');
+    document.body.style.overflow = 'auto';
 } 
 
 closeBtn.addEventListener('click', closeNav)

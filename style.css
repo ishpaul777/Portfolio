@@ -17,7 +17,7 @@ nav {
   top: 0;
   left: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   gap: 25%;
   background-color: white;
@@ -42,32 +42,48 @@ nav {
 }
 
 /* toggle-menu */
+.toggle-menu{
+  cursor: pointer;
+  transition: .25s ease-in;
+  transform: scale(1);
+}
+
+.toggle-menu.invisible{
+  transform: scale(0);
+}
+
 .toggle-menu img {
   width: 28px;
 }
 
 .mobile-menu {
-  display: none;
+  display: flex;
+  flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
+  transform: scale(0);
   background-color: hsla(234, 85%, 62%, 0.856);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(3px);
+  transition: .5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.mobile-menu.active{
+  transform: scale(1);
 }
 
 #close-btn {
-  float: right;
-  width: 32px;
-  padding: 30px;
-  padding-right: 40px;
-  transition: 5s;
+  align-self: end;
+  width: 40px;
+  padding: 10px;
 }
 
 .menu-items {
-  padding: 20px;
-  padding-top: 80px;
+  padding-left: 30px;
+  text-align: left;
+  margin-top: 60px;
 }
 
 .menu-items li {
@@ -76,8 +92,8 @@ nav {
 }
 
 .menu-items li a {
-  font-size: 32px;
-  color: white;
+  font-size: 38px;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -389,6 +405,7 @@ input {
   .menu li {
     margin-right: 30px;
     padding: 5px 5px;
+    cursor: pointer;
   }
 
   .active {
