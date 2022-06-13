@@ -9,12 +9,19 @@ body {
 }
 
 /* the nav bar */
+
 nav {
+  position: fixed;
+  width: 100vw;
+  height: 70px;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  gap: 25%;
   background-color: white;
-  padding: 12px 30px;
-  box-shadow: 3px 1px 5px #b3bac5;
+  border-bottom: 1px solid #b2b3b6;
 }
 
 /* logo */
@@ -35,8 +42,59 @@ nav {
 }
 
 /* toggle-menu */
+.toggle-menu {
+  cursor: pointer;
+  transition: 0.25s ease-in;
+  transform: scale(1);
+}
+
+.toggle-menu.invisible {
+  transform: scale(0);
+}
+
 .toggle-menu img {
   width: 28px;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transform: scale(0);
+  background-color: hsla(234, 85%, 62%, 0.856);
+  backdrop-filter: blur(3px);
+  transition: 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.mobile-menu.active {
+  transform: scale(1);
+}
+
+#close-btn {
+  align-self: end;
+  width: 40px;
+  padding: 10px;
+}
+
+.menu-items {
+  padding-left: 30px;
+  text-align: left;
+  margin-top: 60px;
+}
+
+.menu-items li {
+  padding: 10px;
+  list-style: none;
+}
+
+.menu-items li a {
+  font-size: 38px;
+  color: #fff;
+  text-decoration: none;
 }
 
 /* INTRODUCTION SECTION */
@@ -44,7 +102,7 @@ nav {
   background: #fff url(./assets/images/header-bg-mobile.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 80vh;
   padding-left: 40px;
   text-align: left;
   margin-bottom: 40px;
@@ -373,6 +431,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 90vh;
 }
 
 .contact-me {
@@ -428,11 +487,11 @@ input {
 @media (min-width: 768px) {
   /* nav-menu */
   nav {
-    padding: 12px 0;
+    gap: 50%;
   }
 
   .toggle-menu {
-    display: none;
+    display: none !important;
   }
 
   .menu {
@@ -443,6 +502,12 @@ input {
   .menu li {
     margin-right: 30px;
     padding: 5px 5px;
+    cursor: pointer;
+  }
+
+  .active {
+    border-bottom: 2px solid black;
+    transition: 0.3s ease-in border;
   }
 
   .menu li a {
@@ -643,6 +708,10 @@ input {
 /* transitions */
 
 .logo:hover {
+  transform: rotate(360deg);
+}
+
+#close-btn:active {
   transform: rotate(360deg);
 }
 
