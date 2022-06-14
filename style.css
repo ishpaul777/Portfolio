@@ -601,10 +601,7 @@ input {
 
   .pop-up-window img {
     height: auto;
-    width: 60%;
-    display: flex;
-    justify-self: left;
-    align-self: left;
+    width: 100%;
   }
 
   .pop-up-body {

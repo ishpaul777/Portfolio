@@ -44,10 +44,59 @@ const projects = [
   },
 ];
 
-const seeProjectBtn1 = document.querySelector('.project1-link');// get-project btns
-const seeProjectBtn2 = document.querySelector('.project2-link');// get-project btns
-const seeProjectBtn3 = document.querySelector('.project3-link');// get-project btns
-const seeProjectBtn4 = document.querySelector('.project4-link');// get-project btns
+const projectSection = document.getElementById('project-section');
+
+// for adding projects to the display
+function addProjects(n) {
+  const {
+    name,
+    devInfo,
+    description,
+    languages,
+    image,
+  } = projects[n];
+
+  projectSection.innerHTML += `
+<div class="project">
+<img src=${image} alt="Screenshot-of-*project-name*">
+<section class="project-body">
+    <h3 class="project-name">
+        ${name}
+    </h3>
+    <div class="developer-info">
+        <h4 class="developer-name">
+            ${devInfo}
+        </h4>
+        <ul>
+            <li>● Back End Dev</li>
+            <li>● 2022</li>
+        </ul>
+    </div>
+    <p class="project-description">
+        ${description}
+    </p>
+    <ul class="languages-used">
+        <li class="language"> ${languages[0]}</li>
+        <li class="language">${languages[1]}</li>
+        <li class="language">${languages[2]}</li>
+    </ul>
+    <button  type="button" class="project${n}-link" >
+        See Project
+    </button>
+</section>
+</div>`;
+}
+
+// calling the addprojects function
+
+for (let i = 0; i < projects.length; i += 1) {
+  addProjects(i);
+}
+
+const seeProjectBtn1 = document.querySelector('.project0-link');// get-project btns
+const seeProjectBtn2 = document.querySelector('.project1-link');// get-project btns
+const seeProjectBtn3 = document.querySelector('.project2-link');// get-project btns
+const seeProjectBtn4 = document.querySelector('.project3-link');// get-project btns
 const overlay = document.querySelector('#overlay');// get overlay
 const container = document.querySelector('.pop-up-window');// get the popup-window
 
