@@ -338,7 +338,7 @@ button {
   right: 0;
   bottom: 0;
   background-color: #c1c7d0f7;
-  transition:  0.75s cubic-bezier(0.455, 0.03, 0.515, 0.955) !important;
+  transition: 0.75s cubic-bezier(0.455, 0.03, 0.515, 0.955) !important;
   pointer-events: none;
   backdrop-filter: blur(2px);
 }
