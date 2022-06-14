@@ -267,7 +267,7 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  transition: 0.75s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: 0.75s cubic-bezier(0.455, 0.03, 0.515, 0.955) !important;
   background: #fff;
   border: 2px solid #b2b3b6;
   border-radius: 16px;
@@ -338,7 +338,7 @@ button {
   right: 0;
   bottom: 0;
   background-color: #c1c7d0f7;
-  transition: 0.75s ease;
+  transition:  0.75s cubic-bezier(0.455, 0.03, 0.515, 0.955) !important;
   pointer-events: none;
   backdrop-filter: blur(2px);
 }
@@ -601,9 +601,10 @@ input {
 
   .pop-up-window img {
     height: auto;
+    width: 60%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-self: left;
+    align-self: left;
   }
 
   .pop-up-body {

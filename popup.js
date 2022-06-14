@@ -83,7 +83,9 @@ function openPopup(index){//index for getting the project number
   </div>
 </div>
 <div class="pop-up-body">
-  <img src=${image} alt="Screenshot-of-*project-name*">
+  <div class="images">
+  <img src=${image} alt="Screenshot-of-*project-name*" class="big-img">
+  </div>
   <div class="about-project left">
   <p class="project-description">
    ${description}  
