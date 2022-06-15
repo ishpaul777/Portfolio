@@ -431,7 +431,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 90vh;
+  gap: 20px;
 }
 
 .contact-me {
@@ -448,14 +448,33 @@ footer {
   margin-bottom: 60px;
 }
 
+.errorMsg {
+  color: #ff3860;
+}
+
+.input-control {
+  width: 100%;
+}
+
 input {
   font-size: 17px;
   color: #172b4d;
   padding: 15px 16px;
   width: -webkit-fill-available;
-  margin-bottom: 20px;
   border-radius: 8px;
   border: 1px solid #cfd8dc;
+}
+
+input:focus {
+  outline: 0;
+}
+
+.input-control.success input {
+  border: 3px solid #09c372;
+}
+
+.input-control.error input {
+  border: 3px solid #ff3860;
 }
 
 ::placeholder {
@@ -469,7 +488,6 @@ input {
   color: #172b4d;
   border-radius: 8px;
   padding: 8px;
-  margin-bottom: 20px;
 }
 
 .contact-btn {
