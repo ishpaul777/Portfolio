@@ -312,16 +312,15 @@ form.addEventListener('submit', (e) => {
 });
 
 // storing data in local storage
-
 // FUNCTION FOR STORING DATA
 const storeValues = (username, email, message) => {
-  const userData = JSON.stringify({ username, email, message });//converting array to string 
+  const userData = JSON.stringify({ username, email, message });// converting array to string
   localStorage.setItem('userData', userData);
 };
 
 // FUNCTION FR POPULATING THE DATA
 function fillData() {
-  const inputValues = JSON.parse(localStorage.getItem('userData'));//convertion string to array
+  const inputValues = JSON.parse(localStorage.getItem('userData'));// convertion string to array
   if (inputValues) {
     username.value = inputValues.username;
     email.value = inputValues.email;
