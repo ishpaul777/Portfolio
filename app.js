@@ -310,3 +310,30 @@ form.addEventListener('submit', (e) => {
     submitPt = 0;
   }
 });
+
+// storing data in local storage
+
+// FUNCTION FOR STORING DATA
+const storeValues = (username, email, message) => {
+  const userData = JSON.stringify({ username, email, message });//converting array to string 
+  localStorage.setItem('userData', userData);
+};
+
+// FUNCTION FR POPULATING THE DATA
+function fillData() {
+  const inputValues = JSON.parse(localStorage.getItem('userData'));//convertion string to array
+  if (inputValues) {
+    username.value = inputValues.username;
+    email.value = inputValues.email;
+    message.value = inputValues.message;
+  }
+}
+
+function getValues() {
+  username.addEventListener('input', () => storeValues(username.value, email.value, message.value)); // storing the values
+  email.addEventListener('input', () => storeValues(username.value, email.value, message.value)); // storing the values
+  message.addEventListener('input', () => storeValues(username.value, email.value, message.value)); // storing the values
+}
+
+fillData();
+getValues();
