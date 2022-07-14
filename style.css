@@ -91,6 +91,10 @@ nav {
   list-style: none;
 }
 
+.pop-up-btns a {
+  text-decoration: none;
+}
+
 .menu-items li a {
   font-size: 38px;
   color: #fff;

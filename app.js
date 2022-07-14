@@ -36,14 +36,14 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 // the projectsss
 const projects = [
   {
-    name: 'Tonic',
+    name: 'To Do App',
     devInfo: 'Ishpaul',
     description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent, Lorem Ipsum is simply dummy text.",
-    languages: ['html', 'css', 'javascript'],
-    image: './assets/images/project-1.png',
-    liveVersion: 'See Live',
-    sourceLink: 'See Source',
+        'To-Do List project is the application for a to-do list, users can add and remove tasks from the to-do list. Mark tasks as completed. Users can delete all completed tasks at once. Users can toggle between Dark Mode and Night Mode.',
+    languages: ['html', 'css', 'javascript', 'Webpack'],
+    image: './assets/images/To-do-App-preview.jpg',
+    liveVersion: 'https://ishpaul777.github.io/To-Do-List',
+    sourceLink: 'https://github.com/ishpaul777/To-Do-List',
   },
 
   {
@@ -75,8 +75,8 @@ const projects = [
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent, Lorem Ipsum is simply dummy text.",
     languages: ['html', 'css', 'javascript'],
     image: './assets/images/project-4.png',
-    liveVersion: 'See Live',
-    sourceLink: 'See Source',
+    liveVersion: 'https://ishpaul777.github.io/To-Do-List',
+    sourceLink: 'https://github.com/ishpaul777/To-Do-List',
   },
 ];
 
@@ -103,10 +103,6 @@ function addProjects(n) {
         <h4 class="developer-name">
             ${devInfo}
         </h4>
-        <ul>
-            <li>● Back End Dev</li>
-            <li>● 2022</li>
-        </ul>
     </div>
     <p class="project-description">
         ${description}
@@ -115,6 +111,7 @@ function addProjects(n) {
         <li class="language"> ${languages[0]}</li>
         <li class="language">${languages[1]}</li>
         <li class="language">${languages[2]}</li>
+        <li class="language">${languages[3]}</li>
     </ul>
     <button  type="button" class="project${n}-link" >
         See Project
@@ -180,14 +177,18 @@ function openPopup(index) { // index for getting the project number
       <li class="language">${languages[2]}</li>
   </ul><hr>
   <div class="pop-up-btns">
+  <a href=${liveVersion}  target=”_blank” >
   <button  type="button" class="pop-up-btn live-btn" >
-      ${liveVersion} 
+      See Live
       <i class="bi bi-arrow-up-right-circle-fill"></i>
   </button>
+  </a>
+  <a href=${sourceLink}  target=”_blank” >
   <button  type="button" class="pop-up-btn source-btn" >
-      ${sourceLink}
+      See Source 
       <i class="bi bi-github"></i>
   </button>
+  </a>
   </div>
   </div>
   </div?
